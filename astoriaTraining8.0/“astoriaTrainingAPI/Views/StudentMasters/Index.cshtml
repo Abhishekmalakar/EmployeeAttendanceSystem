@@ -1,0 +1,65 @@
+﻿@model IEnumerable<_astoriaTrainingAPI.Models.StudentMaster>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.StdFname)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StdLname)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StdGender)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StdJoiningDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StdResignationDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StdCource)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.StdFname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StdLname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StdGender)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StdJoiningDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StdResignationDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StdCource.CourceId)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.StdRollNo">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.StdRollNo">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.StdRollNo">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

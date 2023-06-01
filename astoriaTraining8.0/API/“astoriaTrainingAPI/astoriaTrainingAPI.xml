@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>“astoriaTrainingAPI</name>
+    </assembly>
+    <members>
+        <member name="M:_astoriaTrainingAPI.Controllers.EmployeeAllowanceDetailsController.UserInfo(System.String,System.String)">
+            <summary>
+            Getting UserName and password from UserInfotable
+            </summary>
+            <param name="UserName"> String paramerter required</param>
+            <param name="Password"> String paraamerter required</param>
+            <returns> UserInfo Entity</returns>
+        </member>
+        <member name="M:_astoriaTrainingAPI.Controllers.EmployeeAllowanceDetailsController.GetAllowanceMaster">
+            <summary>
+            This method used to get allowance Name from Allowance master table
+            </summary>
+            <returns> AllowanceMaster entity</returns>
+        </member>
+        <member name="M:_astoriaTrainingAPI.Controllers.EmployeeAllowanceDetailsController.GetEmployeeAttendance">
+            <summary>
+            Method is used to get present employeelist
+            </summary>
+            <returns> Allowance Attendance entity</returns>
+        </member>
+        <member name="M:_astoriaTrainingAPI.Controllers.EmployeeAllowanceDetailsController.PostEmployeeAllowanceDetail(System.Collections.Generic.List{_astoriaTrainingAPI.Models.EmployeeAllowanceDetail})">
+            <summary>
+            This method is used for Post/save Allowance of employee 
+            </summary>
+            <param name="employeeAllowanceDetailList"></param>
+            <returns></returns>
+        </member>
+        <member name="M:_astoriaTrainingAPI.Controllers.EmployeeMastersController.GetEmployeeMaster">
+            <summary>
+            Getting Employee Master Data
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:_astoriaTrainingAPI.Controllers.EmployeeMastersController.GetEmployeeList">
+            <summary>
+            Method is used to get Employeelist according to requirment
+            </summary>
+            <returns> EmployeeMaster entity,Company Master entity,Designation Master entity</returns>
+        </member>
+        <member name="M:_astoriaTrainingAPI.Controllers.EmployeeMastersController.GetEmployeeMaster(System.Int64)">
+            <summary>
+            Method is used to get Data of perticular Employee
+            </summary>
+            <param name="id"> Long type Parameter required</param>
+            <returns>EmployeeMaster entity</returns>
+        </member>
+        <member name="M:_astoriaTrainingAPI.Controllers.EmployeeMastersController.GetCompanyMaster">
+            <summary>
+            Method is used to GetAll the companies Name from CompanyMaster Table
+            </summary>
+            <returns> EmpanyMaster entity</returns>
+        </member>
+        <member name="M:_astoriaTrainingAPI.Controllers.EmployeeMastersController.GetDesignationMaster">
+            <summary>
+            This method is used to get Designation of Employee from DesignationMaster Table
+            </summary>
+            <returns>Designation Master Entity</returns>
+        </member>
+        <member name="M:_astoriaTrainingAPI.Controllers.EmployeeMastersController.PutEmployeeMaster(System.Int64,_astoriaTrainingAPI.Models.EmployeeMaster)">
+            <summary>
+            Method is used to change or  update the EmployeeData
+            </summary>
+            <param name="id">Integer parameter is required</param>
+            <param name="employeeMaster"></param>
+            <returns> EmployeeMaster Entity</returns>
+        </member>
+        <member name="M:_astoriaTrainingAPI.Controllers.EmployeeMastersController.PostEmployeeMaster(_astoriaTrainingAPI.Models.EmployeeMaster)">
+            <summary>
+            This Method is used to save Employee to DB
+            </summary>
+            <param name="employeeMaster"></param>
+            <returns>EmplyeeMaster</returns>
+        </member>
+        <member name="M:_astoriaTrainingAPI.Controllers.EmployeeMastersController.DeleteEmployeeMaster(System.Int64)">
+            <summary>
+            This method used to Delete Employee from DataBase
+            </summary>
+            <param name="id"> Interger Parameter is required</param>
+            <returns> Return EmployeeMaster Entity</returns>
+        </member>
+        <member name="M:_astoriaTrainingAPI.Controllers.EmployeeMastersController.EmployeIdinUse(System.Int64)">
+            <summary>
+            This method Check EmployeeId Used or not
+            </summary>
+            <param name="employeeKey"> required</param>
+            <returns> </returns>
+        </member>
+    </members>
+</doc>
